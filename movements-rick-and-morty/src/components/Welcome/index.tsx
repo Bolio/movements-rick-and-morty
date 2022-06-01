@@ -2,6 +2,7 @@ import styled from "styled-components";
 
 import Text from "../Text";
 import ProfilePhoto from "../ProfilePhoto";
+import AvailableBalance from "../AvailableBalance";
 
 const WelcomeStyled = styled.header`
   display: flex;
@@ -30,6 +31,7 @@ const Welcome = () => {
         <Text>{`Hola ${nameUser}`}</Text>
         <ProfilePhoto src={profilePhotoURL} />
       </div>
+      <AvailableBalance />
     </WelcomeStyled>
   );
 };
