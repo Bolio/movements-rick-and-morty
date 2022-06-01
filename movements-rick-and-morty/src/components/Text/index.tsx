@@ -5,6 +5,7 @@ const TextStyled = styled.span`
   font-size: ${({ fontSize }) => fontSize};
   left: ${({ left }) => left};
   right: ${({ right }) => right};
+  height: fit-content;
   background-color: pink;
 `;
 
