@@ -5,7 +5,7 @@ const NavigationBarStyled = styled.nav`
   width: 100%;
   z-index: 1;
   height: 82px;
-  position: absolute;
+  position: fixed;
   bottom: 0;
   background-color: lightgrey;
 `;
