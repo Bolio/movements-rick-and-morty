@@ -2,6 +2,8 @@ import styled from "styled-components";
 import StarIcon from "@mui/icons-material/Star";
 import NotificationsIcon from "@mui/icons-material/Notifications";
 
+import YourNextPayment from "../YourNextPayment";
+
 const ActionsStyled = styled.div`
   display: flex;
   width: 100%;
@@ -9,7 +11,8 @@ const ActionsStyled = styled.div`
   margin-bottom: 182px;
   background-color: purple;
   justify-content: center;
-  div {
+  position: relative;
+  div#container-action-icons {
     position: relative;
     width: 100%;
     top: 36px;
@@ -34,11 +37,12 @@ const ActionsStyled = styled.div`
 const Actions = () => {
   return (
     <ActionsStyled>
-      <div>
+      <div id="container-action-icons">
         <StarIcon />
         <StarIcon />
         <NotificationsIcon />
       </div>
+      <YourNextPayment />
     </ActionsStyled>
   );
 };
