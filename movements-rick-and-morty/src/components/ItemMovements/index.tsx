@@ -1,6 +1,7 @@
 import styled from "styled-components";
 
 import Text from "../Text";
+import { ItemMovementsProps } from "./types";
 
 const ItemMovementsStyled = styled.div`
   display: flex;
@@ -57,23 +58,23 @@ const DateAmountMovementContainerStyled = styled.div`
   }
 `;
 
-const ItemMovements = () => {
+const ItemMovements = ({ character = [] }: ItemMovementsProps) => {
   return (
-    <ItemMovementsStyled>
+    <ItemMovementsStyled key={character.id}>
       <div id="container-image-title-type">
         <ImageMovementContainerStyled>
-          <img src="src/assets/img-logo.png" />
+          <img src={character.image} />
         </ImageMovementContainerStyled>
         <TitleTypeMovementContainerStyled>
-          <Text fontSize="14px">Auto</Text>
-          <Text fontSize="12px">Mis logros</Text>
+          <Text fontSize="14px">{character.name}</Text>
+          <Text fontSize="12px">{character.species}</Text>
         </TitleTypeMovementContainerStyled>
       </div>
 
       <div id="container-date-amount">
         <DateAmountMovementContainerStyled>
-          <Text fontSize="12px">28 de dic</Text>
-          <Text fontSize="14px">$140.00</Text>
+          <Text fontSize="12px">{character.id}</Text>
+          <Text fontSize="14px">{character.status}</Text>
         </DateAmountMovementContainerStyled>
       </div>
     </ItemMovementsStyled>

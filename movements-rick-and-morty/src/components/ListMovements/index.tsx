@@ -1,3 +1,4 @@
+import { useState, useEffect } from "react";
 import styled from "styled-components";
 
 import NavigationBar from "../NavigationBar";
@@ -11,12 +12,27 @@ const ListMovementsStyled = styled.div`
 `;
 
 const ListMovements = () => {
+  const [characters, setCharacters] = useState([]);
+  useEffect(() => {
+    const URL = "https://rickandmortyapi.com/api/character";
+
+    fetch(URL)
+      .then((response) => response.json())
+      .then((res) => {
+        console.log("res:", res);
+        setCharacters(res.results);
+      })
+      .catch((error) => {
+        console.log("error:", error);
+      });
+  }, []);
+
+  console.log("characters:", characters);
   return (
     <ListMovementsStyled>
-      <ItemMovements />
-      {/* <ItemMovements />
-      <ItemMovements />
-      <ItemMovements /> */}
+      {characters.map((character) => (
+        <ItemMovements character={character} />
+      ))}
       <NavigationBar />
     </ListMovementsStyled>
   );
