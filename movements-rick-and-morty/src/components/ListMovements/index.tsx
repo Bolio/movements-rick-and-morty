@@ -2,18 +2,18 @@ import styled from "styled-components";
 
 import NavigationBar from "../NavigationBar";
 
-const MovementItemsStyled = styled.div`
+const ListMovementsStyled = styled.div`
   display: flex;
   height: 296px;
   background-color: aquamarine;
 `;
 
-const MovementItems = () => {
+const ListMovements = () => {
   return (
-    <MovementItemsStyled>
+    <ListMovementsStyled>
       <NavigationBar />
-    </MovementItemsStyled>
+    </ListMovementsStyled>
   );
 };
 
-export default MovementItems;
+export default ListMovements;

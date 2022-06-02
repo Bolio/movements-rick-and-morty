@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 import Actions from "../Actions";
 import YourMovementsTitle from "../YourMovementsTitle";
-import MovementItems from "../MovementItems";
+import ListMovements from "../ListMovements";
 const MainStyled = styled.main`
   display: flex;
   flex-direction: column;
@@ -15,7 +15,7 @@ const Main = () => {
     <MainStyled>
       <Actions>23123423423</Actions>
       <YourMovementsTitle>23123423423</YourMovementsTitle>
-      <MovementItems>ITEMS DE MOVIMIENTOS</MovementItems>
+      <ListMovements>ITEMS DE MOVIMIENTOS</ListMovements>
     </MainStyled>
   );
 };
