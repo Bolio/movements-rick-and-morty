@@ -1,5 +1,7 @@
 import styled from "styled-components";
 
+import { ProfilePhotoProps } from "./types";
+
 const ProfilePhotoWrappperStyled = styled.div`
   display: flex;
   width: 24px;
@@ -17,7 +19,7 @@ const ProfilePhotoImgStyled = styled.img`
   /* background-color: purple; */
 `;
 
-const ProfilePhoto = ({ src }) => {
+const ProfilePhoto = ({ src }: ProfilePhotoProps) => {
   return (
     <ProfilePhotoWrappperStyled>
       <ProfilePhotoImgStyled src={src} alt="profile-photo" />

@@ -1,6 +1,8 @@
 import styled from "styled-components";
 
-const TextStyled = styled.span`
+import { TextProps } from "./types";
+
+const TextStyled = styled.span<TextProps>`
   position: relative;
   font-size: ${({ fontSize }) => fontSize};
   left: ${({ left }) => left};
@@ -9,7 +11,7 @@ const TextStyled = styled.span`
   background-color: pink;
 `;
 
-const Text = ({ children, fontSize, left, right }) => {
+const Text = ({ children, fontSize, left, right }: TextProps) => {
   return (
     <TextStyled fontSize={fontSize} left={left} right={right}>
       {children}

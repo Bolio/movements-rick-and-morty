@@ -1,6 +1,8 @@
 import styled from "styled-components";
 
-const ButtonTextStyled = styled.button`
+import { ButtonTextProps } from "./types";
+
+const ButtonTextStyled = styled.button<ButtonTextProps>`
   position: relative;
   font-size: ${({ fontSize }) => fontSize};
   left: ${({ left }) => left};
@@ -21,7 +23,7 @@ const ButtonText = ({
   width,
   height,
   backgroundColor,
-}) => {
+}: ButtonTextProps) => {
   return (
     <ButtonTextStyled
       fontSize={fontSize}

@@ -13,9 +13,9 @@ const MainStyled = styled.main`
 const Main = () => {
   return (
     <MainStyled>
-      <Actions>23123423423</Actions>
-      <YourMovementsTitle>23123423423</YourMovementsTitle>
-      <ListMovements>ITEMS DE MOVIMIENTOS</ListMovements>
+      <Actions />
+      <YourMovementsTitle />
+      <ListMovements />
     </MainStyled>
   );
 };

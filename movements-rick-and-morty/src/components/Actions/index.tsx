@@ -3,6 +3,7 @@ import StarIcon from "@mui/icons-material/Star";
 import NotificationsIcon from "@mui/icons-material/Notifications";
 
 import YourNextPayment from "../YourNextPayment";
+import React from "react";
 
 const ActionsStyled = styled.div`
   display: flex;
