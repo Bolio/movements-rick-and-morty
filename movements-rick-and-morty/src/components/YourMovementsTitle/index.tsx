@@ -3,7 +3,7 @@ import Text from "../Text";
 
 const YourMovementsTitleStyled = styled.div`
   display: flex;
-  height: 32px;
+  height: 44.5px;
   width: 100%;
   justify-content: space-between;
   align-items: center;
