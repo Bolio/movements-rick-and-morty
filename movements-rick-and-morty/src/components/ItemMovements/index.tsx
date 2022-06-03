@@ -60,7 +60,7 @@ const DateAmountMovementContainerStyled = styled.div`
 
 const ItemMovements = ({ character = [] }: ItemMovementsProps) => {
   return (
-    <ItemMovementsStyled key={character.id}>
+    <ItemMovementsStyled>
       <div id="container-image-title-type">
         <ImageMovementContainerStyled>
           <img src={character.image} />

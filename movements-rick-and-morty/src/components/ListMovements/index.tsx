@@ -25,7 +25,7 @@ const ListMovements = () => {
   return (
     <ListMovementsStyled>
       {characters.map((character) => (
-        <ItemMovements character={character} />
+        <ItemMovements character={character} key={character.id} />
       ))}
       <NavigationBar />
     </ListMovementsStyled>
