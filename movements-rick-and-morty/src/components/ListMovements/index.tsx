@@ -1,8 +1,10 @@
-import { useState, useEffect } from "react";
+import { useEffect } from "react";
+import { useDispatch, useSelector } from "react-redux";
 import styled from "styled-components";
 
 import NavigationBar from "../NavigationBar";
 import ItemMovements from "../ItemMovements";
+import { fetchListMovementsThunk } from "../../redux/modules/listMovements";
 
 const ListMovementsStyled = styled.div`
   display: flex;
@@ -12,22 +14,14 @@ const ListMovementsStyled = styled.div`
 `;
 
 const ListMovements = () => {
-  const [characters, setCharacters] = useState([]);
-  useEffect(() => {
-    const URL = "https://rickandmortyapi.com/api/character";
+  const dispatch = useDispatch();
 
-    fetch(URL)
-      .then((response) => response.json())
-      .then((res) => {
-        console.log("res:", res);
-        setCharacters(res.results);
-      })
-      .catch((error) => {
-        console.log("error:", error);
-      });
+  useEffect(() => {
+    dispatch(fetchListMovementsThunk());
   }, []);
 
-  console.log("characters:", characters);
+  const characters: [] = useSelector((state) => state.movements.listMovements);
+
   return (
     <ListMovementsStyled>
       {characters.map((character) => (
