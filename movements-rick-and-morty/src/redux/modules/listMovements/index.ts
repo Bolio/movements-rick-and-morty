@@ -4,6 +4,7 @@ const initialState = {
   success: false,
   error: false,
   errorMessage: "",
+  meta: {},
 };
 
 // Actions
@@ -13,7 +14,11 @@ const FETCH_LIST_MOVEMENTS = "modules/listMovements/FETCH_LIST_MOVEMENTS";
 export default function reducer(state = initialState, action = {}) {
   switch (action.type) {
     case FETCH_LIST_MOVEMENTS:
-      return { ...state, listMovements: action.payload };
+      return {
+        ...state,
+        listMovements: action.payload.results,
+        meta: action.payload.info,
+      };
     default:
       return state;
   }
