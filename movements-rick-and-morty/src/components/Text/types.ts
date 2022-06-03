@@ -1,9 +1,10 @@
 type TextProps = {
   children: React.ReactNode;
-  id?: string;
   fontSize?: string;
   left?: string;
   right?: string;
+  top?: string;
+  textAlign?: string;
 };
 
 export type { TextProps };

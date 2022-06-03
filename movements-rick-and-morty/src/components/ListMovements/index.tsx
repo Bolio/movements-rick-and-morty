@@ -12,10 +12,6 @@ const ListMovementsStyled = styled.div`
   flex-direction: column;
   height: 296px;
   background-color: aquamarine;
-  span#loading-message {
-    text-align: center;
-    top: 30px;
-  }
 `;
 
 const ListMovements = () => {
@@ -27,18 +23,31 @@ const ListMovements = () => {
 
   const characters: [] = useSelector((state) => state.movements.listMovements);
   const fetch: boolean = useSelector((state) => state.movements.fetching);
+  const error: boolean = useSelector((state) => state.movements.error);
+  const errorMessage: string = useSelector(
+    (state) => state.movements.errorMessage
+  );
+
+  if (fetch) {
+    return (
+      <Text fontSize="32px" textAlign="center" top="30px">
+        Loading...
+      </Text>
+    );
+  }
 
   return (
     <ListMovementsStyled>
-      {fetch ? (
-        <Text id="loading-message" fontSize="32px">
-          Loading...
+      {error ? (
+        <Text fontSize="32px" textAlign="center" top="30px">
+          {errorMessage}
         </Text>
       ) : (
-        characters.map((character) => (
+        characters?.map((character) => (
           <ItemMovements character={character} key={character.id} />
         ))
       )}
+
       <NavigationBar />
     </ListMovementsStyled>
   );
