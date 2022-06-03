@@ -1,6 +1,6 @@
 const initialState = {
   listMovements: [],
-  fetching: false,
+  fetching: true,
   success: false,
   error: false,
   errorMessage: "",
@@ -18,6 +18,7 @@ export default function reducer(state = initialState, action = {}) {
         ...state,
         listMovements: action.payload.results,
         meta: action.payload.info,
+        fetching: false,
       };
     default:
       return state;

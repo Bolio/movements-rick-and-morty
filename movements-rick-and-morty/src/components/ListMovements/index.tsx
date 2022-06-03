@@ -4,6 +4,7 @@ import styled from "styled-components";
 
 import NavigationBar from "../NavigationBar";
 import ItemMovements from "../ItemMovements";
+import Text from "../Text";
 import { fetchListMovementsThunk } from "../../redux/modules/listMovements";
 
 const ListMovementsStyled = styled.div`
@@ -11,6 +12,10 @@ const ListMovementsStyled = styled.div`
   flex-direction: column;
   height: 296px;
   background-color: aquamarine;
+  span#loading-message {
+    text-align: center;
+    top: 30px;
+  }
 `;
 
 const ListMovements = () => {
@@ -21,12 +26,19 @@ const ListMovements = () => {
   }, []);
 
   const characters: [] = useSelector((state) => state.movements.listMovements);
+  const fetch: boolean = useSelector((state) => state.movements.fetching);
 
   return (
     <ListMovementsStyled>
-      {characters.map((character) => (
-        <ItemMovements character={character} key={character.id} />
-      ))}
+      {fetch ? (
+        <Text id="loading-message" fontSize="32px">
+          Loading...
+        </Text>
+      ) : (
+        characters.map((character) => (
+          <ItemMovements character={character} key={character.id} />
+        ))
+      )}
       <NavigationBar />
     </ListMovementsStyled>
   );

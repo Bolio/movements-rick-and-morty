@@ -11,9 +11,9 @@ const TextStyled = styled.span<TextProps>`
   background-color: pink;
 `;
 
-const Text = ({ children, fontSize, left, right }: TextProps) => {
+const Text = ({ children, id, fontSize, left, right }: TextProps) => {
   return (
-    <TextStyled fontSize={fontSize} left={left} right={right}>
+    <TextStyled id={id} fontSize={fontSize} left={left} right={right}>
       {children}
     </TextStyled>
   );
