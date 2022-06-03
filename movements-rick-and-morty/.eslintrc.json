@@ -13,5 +13,41 @@
     "sourceType": "module"
   },
   "plugins": ["react", "@typescript-eslint"],
-  "rules": {}
+  "rules": {
+    // Typescript
+    "@typescript-eslint/no-unused-vars": [
+      "warn",
+      {
+        "argsIgnorePattern": "^_",
+        "varsIgnorePattern": "^_"
+      }
+    ],
+    "@typescript-eslint/explicit-function-return-type": "off",
+    "@typescript-eslint/explicit-module-boundary-types": "off",
+    "@typescript-eslint/interface-name-prefix": "off",
+    "@typescript-eslint/no-non-null-assertion": "off",
+    "@typescript-eslint/no-explicit-any": "warn",
+    "@typescript-eslint/no-object-literal-type-assertion": "off",
+    "@typescript-eslint/no-empty-function": "warn",
+    "@typescript-eslint/naming-convention": [
+      "warn",
+      // functions and variables to be either of camelCase or PascalCase
+      {
+        "selector": ["variable", "function"],
+        "leadingUnderscore": "allow",
+        "format": ["camelCase", "PascalCase", "UPPER_CASE"]
+      },
+      // enums to be PascalCase
+      {
+        "selector": "enum",
+        "format": ["PascalCase"]
+      },
+      // allow destructured properties to be unaffected by any rules
+      {
+        "selector": "variable",
+        "modifiers": ["destructured"],
+        "format": null
+      }
+    ]
+  }
 }
