@@ -1,6 +1,6 @@
 import { Dispatch } from "redux";
 
-interface RickAndMortyState {
+export interface RickAndMortyState {
   listMovements: [];
   fetching: boolean;
   success: boolean;
