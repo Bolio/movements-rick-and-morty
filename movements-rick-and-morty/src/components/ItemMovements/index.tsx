@@ -28,8 +28,7 @@ const ImageMovementContainerStyled = styled.div`
   width: 44px;
   height: 44px;
   position: relative;
-  margin-left: 18px;
-  margin-right: 16px;
+  margin: 7.5px 16px 3.5px 18px;
   /* background-color: yellow; */
   img {
     width: 100%;
