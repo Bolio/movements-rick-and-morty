@@ -4,7 +4,7 @@ import LocalOfferIcon from "@mui/icons-material/LocalOffer";
 import NotificationsIcon from "@mui/icons-material/Notifications";
 
 import YourNextPayment from "../YourNextPayment";
-import React from "react";
+import Text from "../Text";
 
 const ActionsStyled = styled.div`
   display: flex;
@@ -18,20 +18,33 @@ const ActionsStyled = styled.div`
     position: relative;
     width: 100%;
     top: 36px;
-    svg {
+
+    div {
+      display: flex;
+      justify-content: center;
       position: absolute;
-      width: 21px;
-      height: 20px;
-      fill: white;
       :nth-child(1) {
-        left: 69px;
+        left: 60px;
       }
       :nth-child(2) {
-        left: 176px;
-        transform: rotate(90deg);
+        left: 166px;
+        svg {
+          transform: rotate(90deg);
+        }
       }
       :nth-child(3) {
-        right: 74px;
+        right: 63px;
+      }
+      span {
+        top: 28px;
+        color: white;
+        font-size: 8px;
+      }
+      svg {
+        position: absolute;
+        width: 21px;
+        height: 20px;
+        fill: white;
       }
     }
   }
@@ -41,9 +54,18 @@ const Actions = () => {
   return (
     <ActionsStyled>
       <div id="container-action-icons">
-        <StarIcon />
-        <LocalOfferIcon />
-        <NotificationsIcon />
+        <div>
+          <StarIcon />
+          <Text>Crear logro</Text>
+        </div>
+        <div>
+          <LocalOfferIcon />
+          <Text>Crear logro</Text>
+        </div>
+        <div>
+          <NotificationsIcon />
+          <Text>Crear logro</Text>
+        </div>
       </div>
       <YourNextPayment />
     </ActionsStyled>
