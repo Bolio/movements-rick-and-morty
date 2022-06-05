@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import StarIcon from "@mui/icons-material/Star";
+import LocalOfferIcon from "@mui/icons-material/LocalOffer";
 import NotificationsIcon from "@mui/icons-material/Notifications";
 
 import YourNextPayment from "../YourNextPayment";
@@ -27,6 +28,7 @@ const ActionsStyled = styled.div`
       }
       :nth-child(2) {
         left: 176px;
+        transform: rotate(90deg);
       }
       :nth-child(3) {
         right: 74px;
@@ -40,7 +42,7 @@ const Actions = () => {
     <ActionsStyled>
       <div id="container-action-icons">
         <StarIcon />
-        <StarIcon />
+        <LocalOfferIcon />
         <NotificationsIcon />
       </div>
       <YourNextPayment />
