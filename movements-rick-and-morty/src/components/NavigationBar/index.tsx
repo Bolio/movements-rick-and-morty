@@ -1,4 +1,9 @@
 import styled from "styled-components";
+import HomeOutlinedIcon from "@mui/icons-material/HomeOutlined";
+import PaidOutlinedIcon from "@mui/icons-material/PaidOutlined";
+import CreditCardOutlinedIcon from "@mui/icons-material/CreditCardOutlined";
+import StarBorderOutlinedIcon from "@mui/icons-material/StarBorderOutlined";
+import NotificationsOutlinedIcon from "@mui/icons-material/NotificationsOutlined";
 
 const NavigationBarStyled = styled.nav`
   display: flex;
@@ -22,6 +27,8 @@ const ListItemsNavigationBarStyled = styled.ul`
   /* background-color: lightgrey; */
   li {
     display: block;
+    position: relative;
+    bottom: 11px;
   }
 `;
 
@@ -30,29 +37,29 @@ const NavigationBar = () => {
     <NavigationBarStyled>
       <ListItemsNavigationBarStyled>
         <li>
-          <div>
-            <a>A</a>
-          </div>
+          <a>
+            <HomeOutlinedIcon />
+          </a>
         </li>
         <li>
-          <div>
-            <a>A</a>
-          </div>
+          <a>
+            <PaidOutlinedIcon />
+          </a>
         </li>
         <li>
-          <div>
-            <a>A</a>
-          </div>
+          <a>
+            <CreditCardOutlinedIcon />
+          </a>
         </li>
         <li>
-          <div>
-            <a>A</a>
-          </div>
+          <a>
+            <StarBorderOutlinedIcon />
+          </a>
         </li>
         <li>
-          <div>
-            <a>A</a>
-          </div>
+          <a>
+            <NotificationsOutlinedIcon />
+          </a>
         </li>
       </ListItemsNavigationBarStyled>
     </NavigationBarStyled>
