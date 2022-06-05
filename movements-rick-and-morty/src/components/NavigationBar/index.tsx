@@ -7,7 +7,9 @@ const NavigationBarStyled = styled.nav`
   height: 82px;
   position: fixed;
   bottom: 0;
-  /* background-color: lightgrey; */
+  background-color: white;
+  border-radius: 10px 10px 0 0;
+  border: solid 0.5px rgba(9, 22, 31, 0.3);
 `;
 
 const ListItemsNavigationBarStyled = styled.ul`
