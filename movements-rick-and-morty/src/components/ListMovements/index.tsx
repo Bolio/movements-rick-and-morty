@@ -7,6 +7,7 @@ import ItemMovements from "../ItemMovements";
 import Text from "../Text";
 import { fetchListMovementsThunk } from "../../redux/modules/listMovements";
 import { RickAndMortyState } from "../../redux/modules/listMovements";
+import { Character } from "../ItemMovements/types";
 
 const ListMovementsStyled = styled.div`
   display: flex;
@@ -48,8 +49,15 @@ const ListMovements = () => {
           {errorMessage}
         </Text>
       ) : (
-        characters?.map((character) => (
-          <ItemMovements character={character} key={character.id} />
+        characters?.map((character: Character) => (
+          <ItemMovements
+            id={character.id}
+            name={character.name}
+            image={character.image}
+            status={character.status}
+            species={character.species}
+            key={character.id}
+          />
         ))
       )}
 

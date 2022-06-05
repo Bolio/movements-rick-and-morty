@@ -1,7 +1,9 @@
 import { Dispatch } from "redux";
 
+import { Character } from "../../../components/ItemMovements/types";
+
 export interface RickAndMortyState {
-  listMovements: [];
+  listMovements: Character[];
   fetching: boolean;
   success: boolean;
   error: boolean;

@@ -1,13 +1,9 @@
 type Character = {
-  imagen: string;
-  nombre: string;
-  especie: string;
+  image: string;
+  name: string;
+  species: string;
   id: number;
   status: string;
 };
 
-type ItemMovementsProps = {
-  character: Character[];
-};
-
-export type { ItemMovementsProps };
+export type { Character };
