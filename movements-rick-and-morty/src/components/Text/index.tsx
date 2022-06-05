@@ -10,7 +10,7 @@ const TextStyled = styled.span<TextProps>`
   right: ${({ right }) => right};
   height: fit-content;
   text-align: ${({ textAlign }) => textAlign};
-  background-color: pink;
+  /* background-color: pink; */
 `;
 
 const Text = ({

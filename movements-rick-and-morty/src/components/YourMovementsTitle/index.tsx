@@ -7,7 +7,7 @@ const YourMovementsTitleStyled = styled.div`
   width: 100%;
   justify-content: space-between;
   align-items: center;
-  background-color: orange;
+  /* background-color: orange; */
 `;
 
 const YourMovementsTitle = () => {

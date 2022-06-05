@@ -9,7 +9,7 @@ const WelcomeStyled = styled.header`
   height: 186px;
   justify-content: center;
   align-items: center;
-  background-color: green;
+  /* background-color: green; */
   div#container-info-welcome {
     width: 100%;
     display: flex;

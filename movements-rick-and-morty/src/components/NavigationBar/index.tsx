@@ -7,7 +7,7 @@ const NavigationBarStyled = styled.nav`
   height: 82px;
   position: fixed;
   bottom: 0;
-  background-color: lightgrey;
+  /* background-color: lightgrey; */
 `;
 
 const ListItemsNavigationBarStyled = styled.ul`
@@ -17,7 +17,7 @@ const ListItemsNavigationBarStyled = styled.ul`
   height: 82px;
   align-items: center;
   justify-content: space-around;
-  background-color: lightgrey;
+  /* background-color: lightgrey; */
   li {
     display: block;
   }

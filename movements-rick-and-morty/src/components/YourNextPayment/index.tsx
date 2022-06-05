@@ -28,7 +28,7 @@ const YourNextPaymentStyled = styled.div`
 
     :nth-child(3) {
       position: relative;
-      background-color: green;
+      /* background-color: green; */
       span {
         width: fit-content;
         display: block;

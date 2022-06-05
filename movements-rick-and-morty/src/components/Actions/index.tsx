@@ -10,7 +10,7 @@ const ActionsStyled = styled.div`
   width: 100%;
   height: 116px;
   margin-bottom: 182px;
-  background-color: purple;
+  background-color: #783183;
   justify-content: center;
   position: relative;
   div#container-action-icons {

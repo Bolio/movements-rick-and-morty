@@ -7,7 +7,7 @@ const MainStyled = styled.main`
   display: flex;
   flex-direction: column;
   height: 626px;
-  background-color: blue;
+  /* background-color: blue; */
 `;
 
 const Main = () => {

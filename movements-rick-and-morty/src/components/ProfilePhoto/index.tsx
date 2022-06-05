@@ -7,7 +7,7 @@ const ProfilePhotoWrappperStyled = styled.div`
   width: 24px;
   height: 24px;
   border-radius: 50%;
-  background-color: purple;
+  /* background-color: purple; */
   right: 36px;
   position: absolute;
 `;

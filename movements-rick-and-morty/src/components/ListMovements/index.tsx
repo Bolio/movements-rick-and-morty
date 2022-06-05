@@ -13,7 +13,7 @@ const ListMovementsStyled = styled.div`
   display: flex;
   flex-direction: column;
   height: 296px;
-  background-color: aquamarine;
+  /* background-color: aquamarine; */
 `;
 
 const ListMovements = () => {

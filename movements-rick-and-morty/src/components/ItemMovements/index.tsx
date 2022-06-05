@@ -7,20 +7,20 @@ const ItemMovementsStyled = styled.div`
   display: flex;
   width: 100%;
   height: 55px;
-  background-color: #8fe61e;
+  /* background-color: #8fe61e; */
   border-bottom: solid 0.5px #bbb;
 
   div#container-image-title-type {
     display: flex;
     align-items: center;
     width: 50%;
-    background-color: #1e5ae6;
+    /* background-color: #1e5ae6; */
   }
   div#container-date-amount {
     display: flex;
     align-items: center;
     width: 50%;
-    background-color: #8f1ee6;
+    /* background-color: #8f1ee6; */
   }
 `;
 
@@ -30,7 +30,7 @@ const ImageMovementContainerStyled = styled.div`
   position: relative;
   margin-left: 18px;
   margin-right: 16px;
-  background-color: yellow;
+  /* background-color: yellow; */
   img {
     width: 100%;
     height: 100%;
@@ -43,7 +43,7 @@ const TitleTypeMovementContainerStyled = styled.div`
   justify-content: space-around;
   width: calc(100% - 78px);
   height: 44px;
-  background-color: red;
+  /* background-color: red; */
 `;
 
 const DateAmountMovementContainerStyled = styled.div`
@@ -53,7 +53,7 @@ const DateAmountMovementContainerStyled = styled.div`
   align-items: flex-end;
   width: 100%;
   height: 44px;
-  background-color: green;
+  /* background-color: green; */
   span {
     margin-right: 24px;
   }

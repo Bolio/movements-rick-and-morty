@@ -6,7 +6,7 @@ const AppStyled = styled.div`
   display: block;
   margin: 0;
   padding: 0;
-  background-color: red;
+  /* background-color: red; */
 `;
 
 function App() {
