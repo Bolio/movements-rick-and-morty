@@ -8,14 +8,20 @@ const MainStyled = styled.main`
   flex-direction: column;
   height: 626px;
   /* background-color: blue; */
+  div#container-movements {
+    position: relative;
+    top: 182px;
+  }
 `;
 
 const Main = () => {
   return (
     <MainStyled>
       <Actions />
-      <YourMovementsTitle />
-      <ListMovements />
+      <div id="container-movements">
+        <YourMovementsTitle />
+        <ListMovements />
+      </div>
     </MainStyled>
   );
 };

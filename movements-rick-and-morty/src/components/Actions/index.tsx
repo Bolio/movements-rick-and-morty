@@ -10,7 +10,6 @@ const ActionsStyled = styled.div`
   display: flex;
   width: 100%;
   height: 116px;
-  margin-bottom: 182px;
   background-color: #783183;
   justify-content: center;
   position: relative;

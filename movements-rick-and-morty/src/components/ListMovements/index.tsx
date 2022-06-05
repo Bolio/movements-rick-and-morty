@@ -34,33 +34,36 @@ const ListMovements = () => {
     errorMessage,
   }: RickAndMortyState = useSelector((state: RootState) => state.movements);
 
-  if (fetching) {
-    return (
-      <Text fontSize="32px" textAlign="center" top="30px">
-        Loading...
-      </Text>
-    );
-  }
-
-  return (
-    <ListMovementsStyled>
-      {error ? (
+  const fetchOrErrorMessage = () => {
+    if (fetching) {
+      return (
+        <Text fontSize="32px" textAlign="center" top="30px">
+          Loading...
+        </Text>
+      );
+    } else if (error) {
+      return (
         <Text fontSize="32px" textAlign="center" top="30px">
           {errorMessage}
         </Text>
-      ) : (
-        characters?.map((character: Character) => (
-          <ItemMovements
-            id={character.id}
-            name={character.name}
-            image={character.image}
-            status={character.status}
-            species={character.species}
-            key={character.id}
-          />
-        ))
-      )}
+      );
+    }
+    return undefined;
+  };
 
+  return (
+    <ListMovementsStyled>
+      {fetchOrErrorMessage()}
+      {characters?.map((character: Character) => (
+        <ItemMovements
+          id={character.id}
+          name={character.name}
+          image={character.image}
+          status={character.status}
+          species={character.species}
+          key={character.id}
+        />
+      ))}
       <NavigationBar />
     </ListMovementsStyled>
   );
