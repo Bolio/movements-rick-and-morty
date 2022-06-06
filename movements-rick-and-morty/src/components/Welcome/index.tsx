@@ -10,6 +10,12 @@ const WelcomeStyled = styled.header`
   justify-content: center;
   align-items: center;
   /* background-color: green; */
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0) -21%,
+    rgba(34, 168, 210, 0.2) 115%
+  );
+
   div#container-info-welcome {
     width: 100%;
     display: flex;
