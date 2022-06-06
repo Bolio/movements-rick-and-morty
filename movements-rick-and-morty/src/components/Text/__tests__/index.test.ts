@@ -1,10 +1,13 @@
 import React from "react";
 import Text from "..";
+import { TextProps } from "../types";
 import { render } from "@testing-library/react";
 
 describe("Text component", () => {
+  const component = <Text fontSize="12px" />;
+
   test("Should render Text component", () => {
-    const { container } = render(<Text fontSize="12px" />);
+    const { container } = render(component);
     expect(container).toMatchSnapshot();
   });
 
