@@ -5,6 +5,8 @@ type TextProps = {
   right?: string;
   top?: string;
   textAlign?: string;
+  color?: string;
+  fontWeight?: string;
 };
 
 export type { TextProps };

@@ -66,15 +66,15 @@ const ItemMovements = ({ id, name, status, species, image }: Character) => {
           <img src={image} />
         </ImageMovementContainerStyled>
         <TitleTypeMovementContainerStyled>
-          <Text fontSize="14px">{name}</Text>
-          <Text fontSize="12px">{species}</Text>
+          <Text fontSize="14px" fontWeight="600">{name}</Text>
+          <Text fontSize="12px" fontWeight="normal">{species}</Text>
         </TitleTypeMovementContainerStyled>
       </div>
 
       <div id="container-date-amount">
         <DateAmountMovementContainerStyled>
-          <Text fontSize="12px">{id}</Text>
-          <Text fontSize="14px">{status}</Text>
+          <Text fontSize="12px" fontWeight="300">{id}</Text>
+          <Text fontSize="14px" fontWeight="600">{status}</Text>
         </DateAmountMovementContainerStyled>
       </div>
     </ItemMovementsStyled>

@@ -8,8 +8,9 @@ export const theme = {
   },
   fontWeight: {
     light: 300,
-    medium: "normal",
-    bolder: 600,
+    normal: "normal",
+    bold: "bold",
+    bold600: 600,
   },
   fontSize: {
     xSmall: "0.5rem", // 8px

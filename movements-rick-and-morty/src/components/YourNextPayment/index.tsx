@@ -85,34 +85,35 @@ const YourNextPayment = () => {
   return (
     <YourNextPaymentStyled>
       <div>
-        <Text fontSize="16px">Tu próximo pago</Text>
+        <Text fontSize="16px" fontWeight="normal">Tu próximo pago</Text>
       </div>
       <div>
-        <Text fontSize="28px">$28,860.00</Text>
+        <Text fontSize="28px" fontWeight="600">$28,860.00</Text>
       </div>
       <div>
-        <Text fontSize="14px">Fecha de pago</Text>
-        <Text fontSize="18px">16 Enero</Text>
+        <Text fontSize="14px" fontWeight="normal">Fecha de pago</Text>
+        <Text fontSize="18px" fontWeight="600">16 Enero</Text>
         <ButtonText
           fontSize="12px"
           width="120px"
           height="32px"
           backgroundColor="#5acaee"
+          fontWeight="600"
         >
           PAGAR AHORA
         </ButtonText>
       </div>
       <div>
-        <Text fontSize="12px">
+        <Text fontSize="12px" fontWeight="normal">
           <PaidIcon id="paid-icon" />
           Mis logros
         </Text>
-        <Text fontSize="12px">$27,260.00</Text>
-        <Text fontSize="12px">
+        <Text fontSize="12px" fontWeight="600">$27,260.00</Text>
+        <Text fontSize="12px" fontWeight="normal">
           <PaymentIcon id="payment-icon" />
           Compras con TDC
         </Text>
-        <Text fontSize="12px">$1,600.00</Text>
+        <Text fontSize="12px" fontWeight="600">$1,600.00</Text>
       </div>
     </YourNextPaymentStyled>
   );

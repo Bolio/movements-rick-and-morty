@@ -13,6 +13,7 @@ const ButtonTextStyled = styled.button<ButtonTextProps>`
   border-radius: 4px;
   border: none;
   color: white;
+  font-weight: ${({ fontWeight }) => fontWeight};
 `;
 
 const ButtonText = ({
@@ -23,6 +24,7 @@ const ButtonText = ({
   width,
   height,
   backgroundColor,
+  fontWeight,
 }: ButtonTextProps) => {
   return (
     <ButtonTextStyled
@@ -32,6 +34,7 @@ const ButtonText = ({
       width={width}
       height={height}
       backgroundColor={backgroundColor}
+      fontWeight={fontWeight}
     >
       {children}
     </ButtonTextStyled>

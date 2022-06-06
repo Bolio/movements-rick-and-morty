@@ -34,7 +34,7 @@ const Welcome = () => {
   return (
     <WelcomeStyled>
       <div id="container-info-welcome">
-        <Text>{`Hola ${nameUser}`}</Text>
+        <Text fontSize="16px" fontWeight="600">{`Hola ${nameUser}`}</Text>
         <ProfilePhoto src={profilePhotoURL} />
       </div>
       <AvailableBalance />

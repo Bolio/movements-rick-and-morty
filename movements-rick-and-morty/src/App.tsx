@@ -1,4 +1,6 @@
 import styled from "styled-components";
+import { ThemeProvider } from "styled-components";
+import { theme } from "./styled/themes/theme";
 import Welcome from "./components/Welcome";
 import Main from "./components/Main";
 
@@ -11,10 +13,12 @@ const AppStyled = styled.div`
 
 function App() {
   return (
-    <AppStyled>
-      <Welcome />
-      <Main />
-    </AppStyled>
+    <ThemeProvider theme={theme}>
+      <AppStyled>
+        <Welcome />
+        <Main />
+      </AppStyled>
+    </ThemeProvider>
   );
 }
 

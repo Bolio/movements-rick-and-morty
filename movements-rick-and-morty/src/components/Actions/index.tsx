@@ -38,6 +38,7 @@ const ActionsStyled = styled.div`
         top: 28px;
         color: white;
         font-size: 8px;
+        font-weight: 600;
       }
       svg {
         position: absolute;

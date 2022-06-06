@@ -22,8 +22,10 @@ const AvailableBalanceStyled = styled.div`
 const AvailableBalance = () => {
   return (
     <AvailableBalanceStyled>
-      <Text fontSize="12px">SALDO DISPONIBLE</Text>
-      <Text fontSize="34px">$1,499,970.00</Text>
+      <Text fontSize="12px" fontWeight="600">SALDO DISPONIBLE</Text>
+      <Text fontSize="34px" color="#bb64c8" fontWeight="bold">
+        $1,499,970.00
+      </Text>
     </AvailableBalanceStyled>
   );
 };

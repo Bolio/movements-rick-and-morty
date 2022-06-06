@@ -6,6 +6,7 @@ type ButtonTextProps = {
   width?: string;
   height?: string;
   backgroundColor?: string;
+  fontWeight?: string;
 };
 
 export type { ButtonTextProps };

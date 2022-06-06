@@ -10,6 +10,8 @@ const TextStyled = styled.span<TextProps>`
   right: ${({ right }) => right};
   height: fit-content;
   text-align: ${({ textAlign }) => textAlign};
+  color: ${(props) => (props.color ? props.color : props.theme.colors.black)};
+  font-weight: ${({ fontWeight }) => fontWeight};
   /* background-color: pink; */
 `;
 
@@ -20,6 +22,8 @@ const Text = ({
   right,
   top,
   textAlign,
+  color,
+  fontWeight,
 }: TextProps) => {
   return (
     <TextStyled
@@ -28,6 +32,8 @@ const Text = ({
       right={right}
       top={top}
       textAlign={textAlign}
+      color={color}
+      fontWeight={fontWeight}
     >
       {children}
     </TextStyled>
