@@ -25,8 +25,6 @@ enum ActionType {
   FETCH_LIST_MOVEMENTS = "modules/listMovements/FETCH_LIST_MOVEMENTS",
   ERROR_LIST_MOVEMENTS = "modules/currencyConverter/ERROR_LIST_MOVEMENTS",
 }
-// const FETCH_LIST_MOVEMENTS = "modules/listMovements/FETCH_LIST_MOVEMENTS";
-// const ERROR_LIST_MOVEMENTS = "modules/currencyConverter/ERROR_LIST_MOVEMENTS";
 
 // Action Creator
 interface actionFetchListMovements {
@@ -37,19 +35,6 @@ interface actionErrorListMovements {
   type: ActionType.ERROR_LIST_MOVEMENTS;
   payload: string | object;
 }
-// export const fetchListMovements = (payload: { info: {}; results: [] }) => {
-//   return {
-//     type: ActionType.FETCH_LIST_MOVEMENTS,
-//     payload,
-//   };
-// };
-
-// export const errorListMovements = (payload: string) => {
-//   return {
-//     type: ActionType.ERROR_LIST_MOVEMENTS,
-//     payload,
-//   };
-// };
 
 type Action = actionFetchListMovements | actionErrorListMovements;
 
